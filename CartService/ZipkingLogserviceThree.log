@@ -1,0 +1,936 @@
+2024-04-25 14:25:11.573  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28152 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 14:25:11.573  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 14:25:11.602  INFO [CART-SERVICE,,] 28152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 14:25:11.604  INFO [CART-SERVICE,,] 28152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 14:25:12.186  INFO [CART-SERVICE,,] 28152 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=216d6b01-1eb7-3c5b-b285-21c31c504bb6
+2024-04-25 14:25:12.677  INFO [CART-SERVICE,,] 28152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 14:25:12.683  INFO [CART-SERVICE,,] 28152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:25:12.684  INFO [CART-SERVICE,,] 28152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:25:12.750  INFO [CART-SERVICE,,] 28152 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:25:12.750  INFO [CART-SERVICE,,] 28152 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2024-04-25 14:25:12.972  WARN [CART-SERVICE,,] 28152 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:25:13.460  WARN [CART-SERVICE,,] 28152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:25:13.574  INFO [CART-SERVICE,,] 28152 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:25:13.826  WARN [CART-SERVICE,,] 28152 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:25:13.889  INFO [CART-SERVICE,,] 28152 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:25:13.925  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:25:13.929  INFO [CART-SERVICE,,] 28152 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:25:13.948  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:25:13.949  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:25:13.949  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:25:13.949  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:25:13.949  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:25:13.949  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:25:13.949  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:25:14.152  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:25:14.157  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:25:14.162  INFO [CART-SERVICE,,] 28152 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:25:14.174  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714035314173 with initial instances count: 2
+2024-04-25 14:25:14.180  INFO [CART-SERVICE,,] 28152 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 14:25:14.180  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714035314180, current=UP, previous=STARTING]
+2024-04-25 14:25:14.181  INFO [CART-SERVICE,,] 28152 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:25:14.200  INFO [CART-SERVICE,,] 28152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 14:25:14.201  INFO [CART-SERVICE,,] 28152 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 14:25:14.210  INFO [CART-SERVICE,,] 28152 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:25:14.291  INFO [CART-SERVICE,,] 28152 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 3.045 seconds (JVM running for 3.621)
+2024-04-25 14:30:12.186  INFO [CART-SERVICE,,] 28152 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 14:30:12.186  INFO [CART-SERVICE,,] 28152 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25 14:30:12.188  INFO [CART-SERVICE,,] 28152 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-25 14:30:13.953  INFO [CART-SERVICE,,] 28152 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:34:23.829  INFO [CART-SERVICE,,] 28152 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 14:34:23.829  INFO [CART-SERVICE,,] 28152 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 14:34:23.829  INFO [CART-SERVICE,,] 28152 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714035863829, current=DOWN, previous=UP]
+2024-04-25 14:34:23.829  INFO [CART-SERVICE,,] 28152 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:34:23.829  INFO [CART-SERVICE,,] 28152 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:45:00.839  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 14:45:00.840  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 14:45:00.872  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 14:45:00.872  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 14:45:01.415  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=216d6b01-1eb7-3c5b-b285-21c31c504bb6
+2024-04-25 14:45:01.902  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 14:45:01.909  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:45:01.909  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:45:01.971  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:45:01.971  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1099 ms
+2024-04-25 14:45:02.183  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:45:02.657  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:45:02.770  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:45:03.051  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:45:03.126  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:45:03.166  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:45:03.170  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:45:03.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:45:03.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:45:03.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:45:03.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:45:03.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:45:03.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:45:03.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:45:03.409  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:45:03.414  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:45:03.419  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:45:03.430  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714036503429 with initial instances count: 2
+2024-04-25 14:45:03.434  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 14:45:03.435  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036503435, current=UP, previous=STARTING]
+2024-04-25 14:45:03.436  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:45:03.462  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 14:45:03.463  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 14:45:03.464  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:45:03.568  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 3.081 seconds (JVM running for 3.626)
+2024-04-25 14:47:08.017  INFO [CART-SERVICE,,] 23128 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 14:47:08.017  INFO [CART-SERVICE,,] 23128 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25 14:47:08.020  INFO [CART-SERVICE,,] 23128 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-04-25 14:48:42.579  INFO [CART-SERVICE,,] 23128 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 14:48:42.579  INFO [CART-SERVICE,,] 23128 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036722579, current=DOWN, previous=UP]
+2024-04-25 14:48:42.579  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:48:42.584  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:48:42.908  INFO [CART-SERVICE,,] 23128 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:48:45.924  INFO [CART-SERVICE,,] 23128 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:48:45.928  INFO [CART-SERVICE,,] 23128 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 14:48:45.970  INFO [CART-SERVICE,,] 23128 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:48:46.079  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 14:48:46.079  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 14:48:46.245  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=216d6b01-1eb7-3c5b-b285-21c31c504bb6
+2024-04-25 14:48:46.324  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 14:48:46.325  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:48:46.325  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:48:46.344  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:48:46.344  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 264 ms
+2024-04-25 14:48:46.437  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:48:46.640  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:48:46.728  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:48:46.908  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:48:46.935  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:48:46.952  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:48:46.952  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:48:46.961  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:48:46.961  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:48:46.961  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:48:46.962  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:48:46.962  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:48:46.962  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:48:46.962  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:48:46.975  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:48:46.980  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:48:46.983  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:48:46.990  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714036726990 with initial instances count: 6
+2024-04-25 14:48:46.995  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 14:48:46.996  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036726996, current=UP, previous=STARTING]
+2024-04-25 14:48:46.996  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:48:46.998  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 14:48:46.998  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 14:48:47.005  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:48:47.069  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.071 seconds (JVM running for 227.126)
+2024-04-25 14:48:47.070  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 14:48:48.055  INFO [CART-SERVICE,,] 23128 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 14:48:48.055  INFO [CART-SERVICE,,] 23128 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036728055, current=DOWN, previous=UP]
+2024-04-25 14:48:48.055  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:48:48.058  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:48:49.066  INFO [CART-SERVICE,,] 23128 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:48:52.097  INFO [CART-SERVICE,,] 23128 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:48:52.101  INFO [CART-SERVICE,,] 23128 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 14:48:52.141  INFO [CART-SERVICE,,] 23128 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:48:52.253  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 14:48:52.253  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 14:48:52.375  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=216d6b01-1eb7-3c5b-b285-21c31c504bb6
+2024-04-25 14:48:52.442  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 14:48:52.443  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:48:52.443  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:48:52.462  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:48:52.462  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2024-04-25 14:48:52.542  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:48:52.739  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:48:52.822  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:48:53.007  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:48:53.032  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:48:53.046  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:48:53.047  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:48:53.055  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:48:53.055  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:48:53.055  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:48:53.055  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:48:53.055  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:48:53.055  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:48:53.055  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:48:53.065  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:48:53.069  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:48:53.072  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:48:53.079  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714036733079 with initial instances count: 6
+2024-04-25 14:48:53.084  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 14:48:53.084  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036733084, current=UP, previous=STARTING]
+2024-04-25 14:48:53.084  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:48:53.086  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 14:48:53.086  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 14:48:53.091  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:48:53.149  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 0.973 seconds (JVM running for 233.207)
+2024-04-25 14:48:53.151  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 14:51:38.499  INFO [CART-SERVICE,,] 23128 --- [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 14:51:38.500  INFO [CART-SERVICE,,] 23128 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036898500, current=DOWN, previous=UP]
+2024-04-25 14:51:38.500  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:51:38.503  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:51:39.518  INFO [CART-SERVICE,,] 23128 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:51:42.547  INFO [CART-SERVICE,,] 23128 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:51:42.551  INFO [CART-SERVICE,,] 23128 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 14:51:42.591  INFO [CART-SERVICE,,] 23128 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:51:42.692  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 14:51:42.692  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 14:51:42.809  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c9ff3313-8331-319c-8da8-79ed5e951e10
+2024-04-25 14:51:42.871  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 14:51:42.872  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:51:42.872  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:51:42.886  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:51:42.886  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 193 ms
+2024-04-25 14:51:42.973  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:51:43.164  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:51:43.249  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:51:43.429  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:51:43.453  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:51:43.467  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:51:43.467  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:51:43.474  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:51:43.474  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:51:43.474  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:51:43.474  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:51:43.474  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:51:43.474  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:51:43.474  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:51:43.484  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:51:43.487  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:51:43.491  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:51:43.498  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714036903498 with initial instances count: 5
+2024-04-25 14:51:43.502  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 14:51:43.502  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036903502, current=UP, previous=STARTING]
+2024-04-25 14:51:43.502  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:51:43.504  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 14:51:43.505  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 14:51:43.509  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:51:43.566  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 0.948 seconds (JVM running for 403.623)
+2024-04-25 14:51:43.568  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   BraveSamplerConfiguration.RefreshScopedSamplerConfiguration#defaultTraceSampler:
+      Did not match:
+         - @ConditionalOnMissingBean (types: brave.sampler.Sampler; SearchStrategy: all) found beans of type 'brave.sampler.Sampler' samplerOb (OnBeanCondition)
+      Matched:
+         - @ConditionalOnProperty (spring.sleuth.sampler.refresh.enabled) matched (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-25 14:56:43.490  INFO [CART-SERVICE,,] 23128 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:58:00.576  INFO [CART-SERVICE,,] 23128 --- [Thread-19] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 14:58:00.576  INFO [CART-SERVICE,,] 23128 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037280576, current=DOWN, previous=UP]
+2024-04-25 14:58:00.576  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:58:00.579  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:58:01.600  INFO [CART-SERVICE,,] 23128 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:58:04.607  INFO [CART-SERVICE,,] 23128 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:58:04.610  INFO [CART-SERVICE,,] 23128 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 14:58:04.649  INFO [CART-SERVICE,,] 23128 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:58:04.801  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 14:58:04.802  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 14:58:04.950  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c9ff3313-8331-319c-8da8-79ed5e951e10
+2024-04-25 14:58:05.029  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 14:58:05.029  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:58:05.029  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:58:05.045  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:58:05.046  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 243 ms
+2024-04-25 14:58:05.173  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:58:05.486  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:58:05.614  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:58:05.894  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:58:05.930  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:58:05.947  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:58:05.947  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:58:05.956  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:58:05.956  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:58:05.956  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:58:05.956  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:58:05.957  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:58:05.957  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:58:05.957  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:58:05.970  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:58:05.974  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:58:05.978  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:58:05.986  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714037285986 with initial instances count: 6
+2024-04-25 14:58:05.991  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 14:58:05.991  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037285991, current=UP, previous=STARTING]
+2024-04-25 14:58:05.991  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:58:05.994  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 14:58:05.994  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 14:58:06.001  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:58:06.079  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.395 seconds (JVM running for 786.137)
+2024-04-25 14:58:06.080  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 14:58:06.909  INFO [CART-SERVICE,,] 23128 --- [Thread-25] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 14:58:06.909  INFO [CART-SERVICE,,] 23128 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037286909, current=DOWN, previous=UP]
+2024-04-25 14:58:06.913  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:58:06.915  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:58:07.938  INFO [CART-SERVICE,,] 23128 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:58:10.955  INFO [CART-SERVICE,,] 23128 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:58:10.958  INFO [CART-SERVICE,,] 23128 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 14:58:11.002  INFO [CART-SERVICE,,] 23128 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:58:11.136  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 14:58:11.136  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 14:58:11.253  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c9ff3313-8331-319c-8da8-79ed5e951e10
+2024-04-25 14:58:11.317  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 14:58:11.317  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:58:11.317  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:58:11.334  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:58:11.334  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 196 ms
+2024-04-25 14:58:11.417  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:58:11.610  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:58:11.696  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:58:11.901  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:58:11.929  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:58:11.945  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:58:11.945  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:58:11.953  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:58:11.953  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:58:11.953  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:58:11.953  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:58:11.953  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:58:11.953  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:58:11.953  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:58:11.962  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:58:11.965  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:58:11.969  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:58:11.976  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714037291976 with initial instances count: 6
+2024-04-25 14:58:11.981  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 14:58:11.981  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037291981, current=UP, previous=STARTING]
+2024-04-25 14:58:11.981  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 14:58:11.985  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 14:58:11.985  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 14:58:11.989  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 14:58:12.048  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.01 seconds (JVM running for 792.106)
+2024-04-25 14:58:12.051  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:01:54.008  INFO [CART-SERVICE,,] 23128 --- [Thread-31] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 15:01:54.009  INFO [CART-SERVICE,,] 23128 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037514009, current=DOWN, previous=UP]
+2024-04-25 15:01:54.009  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:01:54.012  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:01:55.030  INFO [CART-SERVICE,,] 23128 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:01:58.040  INFO [CART-SERVICE,,] 23128 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:01:58.043  INFO [CART-SERVICE,,] 23128 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 15:01:58.082  INFO [CART-SERVICE,,] 23128 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:01:58.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 15:01:58.193  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 15:01:58.324  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c9ff3313-8331-319c-8da8-79ed5e951e10
+2024-04-25 15:01:58.395  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 15:01:58.396  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:01:58.396  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:01:58.413  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:01:58.413  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 219 ms
+2024-04-25 15:01:58.490  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:01:58.676  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:01:58.762  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:01:58.972  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:01:59.025  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:01:59.042  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:01:59.043  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:01:59.050  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:01:59.050  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:01:59.050  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:01:59.050  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:01:59.050  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:01:59.050  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:01:59.050  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:01:59.060  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:01:59.064  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:01:59.068  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:01:59.075  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714037519075 with initial instances count: 5
+2024-04-25 15:01:59.081  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 15:01:59.081  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037519081, current=UP, previous=STARTING]
+2024-04-25 15:01:59.081  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:01:59.084  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 15:01:59.084  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 15:01:59.089  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:01:59.172  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.057 seconds (JVM running for 1019.23)
+2024-04-25 15:01:59.174  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:02:00.095  INFO [CART-SERVICE,,] 23128 --- [Thread-37] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 15:02:00.095  INFO [CART-SERVICE,,] 23128 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037520095, current=DOWN, previous=UP]
+2024-04-25 15:02:00.095  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:02:00.098  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:02:01.114  INFO [CART-SERVICE,,] 23128 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:02:04.125  INFO [CART-SERVICE,,] 23128 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:02:04.128  INFO [CART-SERVICE,,] 23128 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 15:02:04.167  INFO [CART-SERVICE,,] 23128 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:02:04.281  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 15:02:04.281  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 15:02:04.403  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c9ff3313-8331-319c-8da8-79ed5e951e10
+2024-04-25 15:02:04.469  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 15:02:04.469  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:02:04.469  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:02:04.484  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:02:04.484  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 202 ms
+2024-04-25 15:02:04.562  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:02:04.771  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:02:04.868  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:02:05.046  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:02:05.069  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:02:05.082  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:02:05.082  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:02:05.089  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:02:05.089  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:02:05.089  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:02:05.089  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:02:05.089  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:02:05.089  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:02:05.089  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:02:05.097  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:02:05.100  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:02:05.103  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:02:05.110  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714037525110 with initial instances count: 5
+2024-04-25 15:02:05.114  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 15:02:05.114  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037525114, current=UP, previous=STARTING]
+2024-04-25 15:02:05.115  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:02:05.116  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 15:02:05.117  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 15:02:05.121  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:02:05.178  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 0.97 seconds (JVM running for 1025.236)
+2024-04-25 15:02:05.179  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:07:05.093  INFO [CART-SERVICE,,] 23128 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:11:04.868  INFO [CART-SERVICE,,] 23128 --- [Thread-43] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 15:11:04.868  INFO [CART-SERVICE,,] 23128 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038064868, current=DOWN, previous=UP]
+2024-04-25 15:11:04.868  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:11:04.873  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:11:05.892  INFO [CART-SERVICE,,] 23128 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:11:08.914  INFO [CART-SERVICE,,] 23128 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:11:08.917  INFO [CART-SERVICE,,] 23128 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 15:11:08.957  INFO [CART-SERVICE,,] 23128 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:11:09.078  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 15:11:09.078  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 15:11:09.223  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c9ff3313-8331-319c-8da8-79ed5e951e10
+2024-04-25 15:11:09.302  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 15:11:09.303  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:11:09.303  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:11:09.318  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:11:09.318  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 238 ms
+2024-04-25 15:11:09.411  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:11:09.632  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:11:09.722  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:11:09.921  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:11:09.953  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:11:09.971  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:11:09.971  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:11:09.978  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:11:09.978  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:11:09.978  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:11:09.978  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:11:09.978  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:11:09.978  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:11:09.978  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:11:09.989  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:11:09.992  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:11:09.995  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:11:10.003  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038070003 with initial instances count: 5
+2024-04-25 15:11:10.008  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 15:11:10.008  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038070008, current=UP, previous=STARTING]
+2024-04-25 15:11:10.008  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:11:10.010  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 15:11:10.010  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 15:11:10.015  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:11:10.075  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.076 seconds (JVM running for 1570.133)
+2024-04-25 15:11:10.076  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:11:11.051  INFO [CART-SERVICE,,] 23128 --- [Thread-49] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 15:11:11.052  INFO [CART-SERVICE,,] 23128 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038071052, current=DOWN, previous=UP]
+2024-04-25 15:11:11.052  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:11:11.053  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:11:12.076  INFO [CART-SERVICE,,] 23128 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:11:15.095  INFO [CART-SERVICE,,] 23128 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:11:15.098  INFO [CART-SERVICE,,] 23128 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 15:11:15.138  INFO [CART-SERVICE,,] 23128 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:11:15.252  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23128 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 15:11:15.252  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 15:11:15.377  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c9ff3313-8331-319c-8da8-79ed5e951e10
+2024-04-25 15:11:15.450  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 15:11:15.450  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:11:15.450  INFO [CART-SERVICE,,] 23128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:11:15.466  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:11:15.466  INFO [CART-SERVICE,,] 23128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 213 ms
+2024-04-25 15:11:15.554  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:11:15.756  WARN [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:11:15.849  INFO [CART-SERVICE,,] 23128 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:11:16.037  WARN [CART-SERVICE,,] 23128 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:11:16.063  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:11:16.077  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:11:16.078  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:11:16.085  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:11:16.085  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:11:16.085  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:11:16.085  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:11:16.085  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:11:16.085  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:11:16.085  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:11:16.093  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:11:16.096  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:11:16.100  INFO [CART-SERVICE,,] 23128 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:11:16.107  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038076107 with initial instances count: 5
+2024-04-25 15:11:16.111  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 15:11:16.111  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038076111, current=UP, previous=STARTING]
+2024-04-25 15:11:16.111  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:11:16.115  INFO [CART-SERVICE,,] 23128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 15:11:16.115  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 15:11:16.119  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:11:16.182  INFO [CART-SERVICE,,] 23128 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.009 seconds (JVM running for 1576.24)
+2024-04-25 15:11:16.183  INFO [CART-SERVICE,,] 23128 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:12:19.875  INFO [CART-SERVICE,,] 23128 --- [Thread-55] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 15:12:19.875  INFO [CART-SERVICE,,] 23128 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038139875, current=DOWN, previous=UP]
+2024-04-25 15:12:19.875  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:12:19.877  INFO [CART-SERVICE,,] 23128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:12:20.900  INFO [CART-SERVICE,,] 23128 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:12:23.931  INFO [CART-SERVICE,,] 23128 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:12:23.934  INFO [CART-SERVICE,,] 23128 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 15:12:23.976  INFO [CART-SERVICE,,] 23128 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:14:47.797  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 26648 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 15:14:47.798  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 15:14:47.854  INFO [CART-SERVICE,,] 26648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 15:14:47.854  INFO [CART-SERVICE,,] 26648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 15:14:50.037  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d98b442c-68be-3f0a-868e-889e3a5c7474
+2024-04-25 15:14:51.146  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 15:14:51.156  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:14:51.157  INFO [CART-SERVICE,,] 26648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:14:51.293  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:14:51.293  INFO [CART-SERVICE,,] 26648 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3438 ms
+2024-04-25 15:14:52.232  WARN [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:14:54.365  WARN [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:14:54.591  INFO [CART-SERVICE,,] 26648 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:14:54.936  WARN [CART-SERVICE,,] 26648 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:14:55.004  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 15:14:55.116  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:14:55.193  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:14:55.201  INFO [CART-SERVICE,,] 26648 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:14:55.259  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:14:55.259  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:14:55.259  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:14:55.259  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:14:55.259  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:14:55.259  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:14:55.259  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:14:55.732  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:14:55.742  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:14:55.751  INFO [CART-SERVICE,,] 26648 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:14:55.773  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038295771 with initial instances count: 0
+2024-04-25 15:14:55.783  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 15:14:55.784  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038295784, current=UP, previous=STARTING]
+2024-04-25 15:14:55.786  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:14:55.817  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 15:14:55.818  INFO [CART-SERVICE,,] 26648 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 15:14:55.836  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:14:56.015  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 8.772 seconds (JVM running for 10.02)
+2024-04-25 15:15:25.742  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:15:25.742  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:15:25.742  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:15:25.742  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:15:25.742  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:15:25.742  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-04-25 15:15:25.743  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:15:25.750  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:15:43.521  INFO [CART-SERVICE,,] 26648 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 15:15:43.522  INFO [CART-SERVICE,,] 26648 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038343522, current=DOWN, previous=UP]
+2024-04-25 15:15:43.522  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:15:43.527  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:15:44.549  INFO [CART-SERVICE,,] 26648 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:15:47.566  INFO [CART-SERVICE,,] 26648 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:15:47.570  INFO [CART-SERVICE,,] 26648 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 15:15:47.611  INFO [CART-SERVICE,,] 26648 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:15:47.719  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 26648 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 15:15:47.719  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 15:15:48.337  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d98b442c-68be-3f0a-868e-889e3a5c7474
+2024-04-25 15:15:48.464  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 15:15:48.465  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:15:48.465  INFO [CART-SERVICE,,] 26648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:15:48.495  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:15:48.495  INFO [CART-SERVICE,,] 26648 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 775 ms
+2024-04-25 15:15:48.681  WARN [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:15:49.264  WARN [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:15:49.372  INFO [CART-SERVICE,,] 26648 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:15:49.575  WARN [CART-SERVICE,,] 26648 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:15:49.605  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 15:15:49.639  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:15:49.661  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:15:49.662  INFO [CART-SERVICE,,] 26648 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:15:49.671  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:15:49.672  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:15:49.672  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:15:49.672  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:15:49.672  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:15:49.672  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:15:49.672  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:15:49.691  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:15:49.696  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:15:49.701  INFO [CART-SERVICE,,] 26648 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:15:49.711  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038349711 with initial instances count: 6
+2024-04-25 15:15:49.717  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 15:15:49.717  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038349717, current=UP, previous=STARTING]
+2024-04-25 15:15:49.717  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:15:49.721  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 15:15:49.722  INFO [CART-SERVICE,,] 26648 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 15:15:49.728  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:15:49.818  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 2.18 seconds (JVM running for 63.823)
+2024-04-25 15:15:49.821  INFO [CART-SERVICE,,] 26648 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:15:52.705  INFO [CART-SERVICE,,] 26648 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 15:15:52.706  INFO [CART-SERVICE,,] 26648 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038352706, current=DOWN, previous=UP]
+2024-04-25 15:15:52.706  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:15:52.709  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:15:53.718  INFO [CART-SERVICE,,] 26648 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:15:56.735  INFO [CART-SERVICE,,] 26648 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:15:56.738  INFO [CART-SERVICE,,] 26648 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 15:15:56.779  INFO [CART-SERVICE,,] 26648 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:15:56.888  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 26648 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 15:15:56.889  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 15:15:57.200  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4d60c78-454b-3394-b22f-5b533a0b1f9e
+2024-04-25 15:15:57.295  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 15:15:57.296  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:15:57.296  INFO [CART-SERVICE,,] 26648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:15:57.316  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:15:57.316  INFO [CART-SERVICE,,] 26648 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 425 ms
+2024-04-25 15:15:57.474  WARN [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:15:57.841  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 15:15:57.903  INFO [CART-SERVICE,,] 26648 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 15:15:58.019  WARN [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:15:58.193  INFO [CART-SERVICE,,] 26648 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:15:58.313  WARN [CART-SERVICE,,] 26648 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:15:58.351  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:15:58.366  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:15:58.366  INFO [CART-SERVICE,,] 26648 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:15:58.372  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:15:58.373  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:15:58.373  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:15:58.373  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:15:58.373  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:15:58.373  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:15:58.373  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:15:58.385  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:15:58.389  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:15:58.392  INFO [CART-SERVICE,,] 26648 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:15:58.399  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038358399 with initial instances count: 6
+2024-04-25 15:15:58.403  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 15:15:58.403  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038358403, current=UP, previous=STARTING]
+2024-04-25 15:15:58.404  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 15:15:58.406  INFO [CART-SERVICE,,] 26648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 15:15:58.406  INFO [CART-SERVICE,,] 26648 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 15:15:58.412  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 15:15:58.470  INFO [CART-SERVICE,,] 26648 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 15:15:58.479  INFO [CART-SERVICE,,] 26648 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 15:15:58.497  INFO [CART-SERVICE,,] 26648 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 15:15:58.537  INFO [CART-SERVICE,,] 26648 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.727 seconds (JVM running for 72.542)
+2024-04-25 15:15:58.541  INFO [CART-SERVICE,,] 26648 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   Swagger2DocumentationConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-25 15:17:03.821  INFO [CART-SERVICE,,] 26648 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 15:17:03.821  INFO [CART-SERVICE,,] 26648 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25 15:17:03.821  INFO [CART-SERVICE,,] 26648 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-04-25 15:20:58.385  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:25:58.392  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:30:58.400  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:35:58.416  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:40:58.419  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:45:58.430  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:50:58.442  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:55:58.449  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:00:58.462  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:05:58.470  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:10:58.472  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:35:26.695  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:40:26.709  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:45:26.722  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:50:26.724  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:55:26.733  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:00:26.737  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:05:26.753  INFO [CART-SERVICE,,] 26648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:08:11.277  INFO [CART-SERVICE,,] 26648 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 17:08:11.277  INFO [CART-SERVICE,,] 26648 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 17:08:11.306  INFO [CART-SERVICE,,] 26648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 17:08:11.307  INFO [CART-SERVICE,,] 26648 --- [RMI TCP Connection(3)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714045091307, current=DOWN, previous=UP]
+2024-04-25 17:08:11.307  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:08:11.317  INFO [CART-SERVICE,,] 26648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:29:05.358  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 26952 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 17:29:05.359  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 17:29:05.397  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 17:29:05.398  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 17:29:06.650  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4d60c78-454b-3394-b22f-5b533a0b1f9e
+2024-04-25 17:29:07.402  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 17:29:07.409  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:29:07.409  INFO [CART-SERVICE,,] 26952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:29:07.538  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:29:07.538  INFO [CART-SERVICE,,] 26952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2140 ms
+2024-04-25 17:29:07.916  WARN [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:29:08.750  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:29:08.847  INFO [CART-SERVICE,,] 26952 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:29:09.181  WARN [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:29:09.645  INFO [CART-SERVICE,,] 26952 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:29:09.849  WARN [CART-SERVICE,,] 26952 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:29:09.947  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:29:09.986  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:29:09.992  INFO [CART-SERVICE,,] 26952 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:29:10.017  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:29:10.017  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:29:10.017  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:29:10.017  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:29:10.017  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:29:10.018  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:29:10.018  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:29:10.272  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:29:10.279  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:29:10.287  INFO [CART-SERVICE,,] 26952 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:29:10.302  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714046350302 with initial instances count: 1
+2024-04-25 17:29:10.308  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 17:29:10.309  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046350309, current=UP, previous=STARTING]
+2024-04-25 17:29:10.310  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:29:10.343  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 17:29:10.344  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 17:29:10.347  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:29:10.454  INFO [CART-SERVICE,,] 26952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:29:10.468  INFO [CART-SERVICE,,] 26952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:29:10.501  INFO [CART-SERVICE,,] 26952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:29:10.583  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 5.647 seconds (JVM running for 6.363)
+2024-04-25 17:32:52.107  INFO [CART-SERVICE,,] 26952 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 17:32:52.108  INFO [CART-SERVICE,,] 26952 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046572108, current=DOWN, previous=UP]
+2024-04-25 17:32:52.108  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:32:52.112  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:32:53.145  INFO [CART-SERVICE,,] 26952 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 17:32:56.169  INFO [CART-SERVICE,,] 26952 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 17:32:56.174  INFO [CART-SERVICE,,] 26952 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 17:32:56.241  INFO [CART-SERVICE,,] 26952 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 17:32:56.386  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 26952 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 17:32:56.387  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 17:32:56.725  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4d60c78-454b-3394-b22f-5b533a0b1f9e
+2024-04-25 17:32:56.826  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 17:32:56.827  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:32:56.827  INFO [CART-SERVICE,,] 26952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:32:56.847  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:32:56.847  INFO [CART-SERVICE,,] 26952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 458 ms
+2024-04-25 17:32:57.035  WARN [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:32:57.424  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:32:57.467  INFO [CART-SERVICE,,] 26952 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:32:57.578  WARN [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:32:57.859  INFO [CART-SERVICE,,] 26952 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:32:57.990  WARN [CART-SERVICE,,] 26952 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:32:58.049  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:32:58.072  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:32:58.072  INFO [CART-SERVICE,,] 26952 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:32:58.084  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:32:58.084  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:32:58.084  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:32:58.084  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:32:58.084  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:32:58.084  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:32:58.084  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:32:58.108  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:32:58.114  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:32:58.120  INFO [CART-SERVICE,,] 26952 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:32:58.133  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714046578133 with initial instances count: 6
+2024-04-25 17:32:58.140  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 17:32:58.140  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046578140, current=UP, previous=STARTING]
+2024-04-25 17:32:58.140  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:32:58.143  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 17:32:58.144  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 17:32:58.152  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:32:58.212  INFO [CART-SERVICE,,] 26952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:32:58.212  INFO [CART-SERVICE,,] 26952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:32:58.215  INFO [CART-SERVICE,,] 26952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:32:58.229  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.939 seconds (JVM running for 234.01)
+2024-04-25 17:32:58.235  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 17:34:06.982  INFO [CART-SERVICE,,] 26952 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 17:34:06.982  INFO [CART-SERVICE,,] 26952 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046646982, current=DOWN, previous=UP]
+2024-04-25 17:34:06.982  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:34:06.987  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:34:08.032  INFO [CART-SERVICE,,] 26952 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 17:34:11.049  INFO [CART-SERVICE,,] 26952 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 17:34:11.052  INFO [CART-SERVICE,,] 26952 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 17:34:11.120  INFO [CART-SERVICE,,] 26952 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 17:34:11.255  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 26952 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 17:34:11.256  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 17:34:11.540  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4d60c78-454b-3394-b22f-5b533a0b1f9e
+2024-04-25 17:34:11.640  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 17:34:11.641  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:34:11.641  INFO [CART-SERVICE,,] 26952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:34:11.669  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:34:11.670  INFO [CART-SERVICE,,] 26952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 413 ms
+2024-04-25 17:34:11.836  WARN [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:34:12.196  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:34:12.234  INFO [CART-SERVICE,,] 26952 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:34:12.327  WARN [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:34:12.545  INFO [CART-SERVICE,,] 26952 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:34:12.682  WARN [CART-SERVICE,,] 26952 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:34:12.728  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:34:12.751  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:34:12.751  INFO [CART-SERVICE,,] 26952 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:34:12.761  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:34:12.761  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:34:12.761  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:34:12.761  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:34:12.761  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:34:12.761  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:34:12.761  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:34:12.780  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:34:12.787  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:34:12.793  INFO [CART-SERVICE,,] 26952 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:34:12.804  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714046652804 with initial instances count: 6
+2024-04-25 17:34:12.809  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 17:34:12.809  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046652809, current=UP, previous=STARTING]
+2024-04-25 17:34:12.809  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:34:12.812  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 17:34:12.813  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 17:34:12.822  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:34:12.888  INFO [CART-SERVICE,,] 26952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:34:12.889  INFO [CART-SERVICE,,] 26952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:34:12.892  INFO [CART-SERVICE,,] 26952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:34:12.907  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.744 seconds (JVM running for 308.688)
+2024-04-25 17:34:12.909  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 17:38:07.737  INFO [CART-SERVICE,,] 26952 --- [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 17:38:07.737  INFO [CART-SERVICE,,] 26952 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046887737, current=DOWN, previous=UP]
+2024-04-25 17:38:07.737  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:38:07.742  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:38:08.787  INFO [CART-SERVICE,,] 26952 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 17:38:11.807  INFO [CART-SERVICE,,] 26952 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 17:38:11.811  INFO [CART-SERVICE,,] 26952 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - deregister  status: 200
+2024-04-25 17:38:11.876  INFO [CART-SERVICE,,] 26952 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 17:38:11.999  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 26952 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 17:38:12.000  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 17:38:12.336  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4d60c78-454b-3394-b22f-5b533a0b1f9e
+2024-04-25 17:38:12.420  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 17:38:12.421  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:38:12.421  INFO [CART-SERVICE,,] 26952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:38:12.446  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:38:12.446  INFO [CART-SERVICE,,] 26952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 445 ms
+2024-04-25 17:38:12.622  WARN [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:38:12.986  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:38:13.026  INFO [CART-SERVICE,,] 26952 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:38:13.114  WARN [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:38:13.334  INFO [CART-SERVICE,,] 26952 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:38:13.468  WARN [CART-SERVICE,,] 26952 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:38:13.510  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:38:13.532  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:38:13.532  INFO [CART-SERVICE,,] 26952 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:38:13.543  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:38:13.543  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:38:13.543  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:38:13.543  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:38:13.543  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:38:13.543  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:38:13.543  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:38:13.557  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:38:13.563  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:38:13.569  INFO [CART-SERVICE,,] 26952 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:38:13.580  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714046893580 with initial instances count: 5
+2024-04-25 17:38:13.585  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 17:38:13.586  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046893586, current=UP, previous=STARTING]
+2024-04-25 17:38:13.586  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:38:13.590  INFO [CART-SERVICE,,] 26952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 17:38:13.591  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 17:38:13.598  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:38:13.658  INFO [CART-SERVICE,,] 26952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:38:13.659  INFO [CART-SERVICE,,] 26952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:38:13.667  INFO [CART-SERVICE,,] 26952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:38:13.679  INFO [CART-SERVICE,,] 26952 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 1.761 seconds (JVM running for 549.459)
+2024-04-25 17:38:13.681  INFO [CART-SERVICE,,] 26952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 17:38:40.072  INFO [CART-SERVICE,,] 26952 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 17:38:40.073  INFO [CART-SERVICE,,] 26952 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 17:38:40.073  INFO [CART-SERVICE,,] 26952 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046920073, current=DOWN, previous=UP]
+2024-04-25 17:38:40.074  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:38:40.078  INFO [CART-SERVICE,,] 26952 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:43:56.249  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.alt.CartServiceApplication           : Starting CartServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 12924 (D:\Topic_Wise_microservice_Implementation\CartService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\CartService)
+2024-04-25 17:43:56.250  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.alt.CartServiceApplication           : No active profile set, falling back to default profiles: default
+2024-04-25 17:43:56.288  INFO [CART-SERVICE,,] 12924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 17:43:56.288  INFO [CART-SERVICE,,] 12924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 17:43:57.261  INFO [CART-SERVICE,,] 12924 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=293c6a16-74ed-33b3-b5d0-421ada2306b6
+2024-04-25 17:43:57.806  INFO [CART-SERVICE,,] 12924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9009 (http)
+2024-04-25 17:43:57.813  INFO [CART-SERVICE,,] 12924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:43:57.813  INFO [CART-SERVICE,,] 12924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:43:57.886  INFO [CART-SERVICE,,] 12924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:43:57.886  INFO [CART-SERVICE,,] 12924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1598 ms
+2024-04-25 17:43:58.232  WARN [CART-SERVICE,,] 12924 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:43:59.127  INFO [CART-SERVICE,,] 12924 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:43:59.221  INFO [CART-SERVICE,,] 12924 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:43:59.500  WARN [CART-SERVICE,,] 12924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:44:00.255  INFO [CART-SERVICE,,] 12924 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:44:00.544  WARN [CART-SERVICE,,] 12924 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:44:00.684  INFO [CART-SERVICE,,] 12924 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:44:00.738  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:44:00.744  INFO [CART-SERVICE,,] 12924 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:44:00.778  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:44:00.778  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:44:00.778  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:44:00.778  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:44:00.778  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:44:00.779  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:44:00.779  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:44:00.943  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:44:00.951  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:44:00.959  INFO [CART-SERVICE,,] 12924 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:44:00.975  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714047240974 with initial instances count: 3
+2024-04-25 17:44:00.993  INFO [CART-SERVICE,,] 12924 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2024-04-25 17:44:00.993  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714047240993, current=UP, previous=STARTING]
+2024-04-25 17:44:00.995  INFO [CART-SERVICE,,] 12924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:44:01.032  INFO [CART-SERVICE,,] 12924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9009 (http) with context path ''
+2024-04-25 17:44:01.033  INFO [CART-SERVICE,,] 12924 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9009
+2024-04-25 17:44:01.042  INFO [CART-SERVICE,,] 12924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
+2024-04-25 17:44:01.188  INFO [CART-SERVICE,,] 12924 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:44:01.208  INFO [CART-SERVICE,,] 12924 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:44:01.252  INFO [CART-SERVICE,,] 12924 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:44:01.363  INFO [CART-SERVICE,,] 12924 --- [restartedMain] com.alt.CartServiceApplication           : Started CartServiceApplication in 5.577 seconds (JVM running for 6.33)
+2024-04-25 17:44:01.400  INFO [CART-SERVICE,,] 12924 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 8e02f8dc7d26
+2024-04-25 17:44:01.453  INFO [CART-SERVICE,,] 12924 --- [http-nio-9009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 17:44:01.454  INFO [CART-SERVICE,,] 12924 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25 17:44:01.456  INFO [CART-SERVICE,,] 12924 --- [http-nio-9009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-25 17:49:00.787  INFO [CART-SERVICE,,] 12924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:51:14.319  INFO [CART-SERVICE,,] 12924 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 17:51:14.320  INFO [CART-SERVICE,,] 12924 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CART-SERVICE with eureka with status DOWN
+2024-04-25 17:51:14.320  INFO [CART-SERVICE,,] 12924 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714047674320, current=DOWN, previous=UP]
+2024-04-25 17:51:14.320  INFO [CART-SERVICE,,] 12924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009: registering service...
+2024-04-25 17:51:14.324  INFO [CART-SERVICE,,] 12924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-96LS5MF:CART-SERVICE:9009 - registration status: 204
