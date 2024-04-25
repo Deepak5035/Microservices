@@ -13,6 +13,8 @@ public class AdminServerApplication {
 		SpringApplication.run(AdminServerApplication.class, args);
 		System.out.println();
 		System.out.println();
+		System.out.println();
+		System.out.println();
 	}
 
 }
