@@ -1,0 +1,4 @@
+zookeeper-server-start.bat ..\..\config\zookeeper.properties
+kafka-server-start.bat D:\Kafka\kafka-2.6.0-src\config\server.properties
+kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic myKafkaTest
+D:\Kafka\kafka_2.12-2.6.0\bin\windows>kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic myKafkaTest --from-beginning
