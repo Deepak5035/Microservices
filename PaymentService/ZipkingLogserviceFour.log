@@ -1,0 +1,864 @@
+2024-04-25 14:25:15.541  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 8480 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 14:25:15.542  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 14:25:15.572  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 14:25:15.574  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 14:25:16.129  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bd020077-2edf-3d11-a9c5-d6a43550c8d7
+2024-04-25 14:25:16.624  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 14:25:16.630  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:25:16.631  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:25:16.690  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:25:16.690  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1116 ms
+2024-04-25 14:25:16.906  WARN [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:25:17.507  WARN [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:25:17.525  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:25:17.889  WARN [PAYMENT-SERVICE,,] 8480 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:25:17.982  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:25:18.028  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:25:18.033  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:25:18.079  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:25:18.079  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:25:18.079  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:25:18.079  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:25:18.079  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:25:18.080  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:25:18.080  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:25:18.384  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:25:18.393  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:25:18.399  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:25:18.413  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714035318412 with initial instances count: 2
+2024-04-25 14:25:18.420  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 14:25:18.420  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714035318420, current=UP, previous=STARTING]
+2024-04-25 14:25:18.422  INFO [PAYMENT-SERVICE,,] 8480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:25:18.443  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 14:25:18.444  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 14:25:18.458  INFO [PAYMENT-SERVICE,,] 8480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:25:18.548  INFO [PAYMENT-SERVICE,,] 8480 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 3.381 seconds (JVM running for 3.969)
+2024-04-25 14:26:53.262  INFO [PAYMENT-SERVICE,,] 8480 --- [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 14:26:53.262  INFO [PAYMENT-SERVICE,,] 8480 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25 14:26:53.264  INFO [PAYMENT-SERVICE,,] 8480 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-25 14:30:18.098  INFO [PAYMENT-SERVICE,,] 8480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:34:23.440  INFO [PAYMENT-SERVICE,,] 8480 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 14:34:23.447  INFO [PAYMENT-SERVICE,,] 8480 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 14:34:23.447  INFO [PAYMENT-SERVICE,,] 8480 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714035863447, current=DOWN, previous=UP]
+2024-04-25 14:34:23.447  INFO [PAYMENT-SERVICE,,] 8480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:34:23.447  INFO [PAYMENT-SERVICE,,] 8480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:45:07.825  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 14:45:07.825  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 14:45:07.857  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 14:45:07.857  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 14:45:08.406  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bd020077-2edf-3d11-a9c5-d6a43550c8d7
+2024-04-25 14:45:08.887  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 14:45:08.894  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:45:08.894  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:45:08.955  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:45:08.955  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1098 ms
+2024-04-25 14:45:09.166  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:45:09.939  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:45:09.955  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:45:10.321  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:45:10.395  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:45:10.433  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:45:10.438  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:45:10.459  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:45:10.459  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:45:10.459  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:45:10.460  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:45:10.460  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:45:10.460  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:45:10.460  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:45:10.682  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:45:10.687  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:45:10.694  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:45:10.704  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714036510704 with initial instances count: 2
+2024-04-25 14:45:10.710  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 14:45:10.711  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036510711, current=UP, previous=STARTING]
+2024-04-25 14:45:10.712  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:45:10.736  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 14:45:10.737  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 14:45:10.742  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:45:10.830  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 3.377 seconds (JVM running for 4.001)
+2024-04-25 14:47:07.913  INFO [PAYMENT-SERVICE,,] 28016 --- [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 14:47:07.914  INFO [PAYMENT-SERVICE,,] 28016 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25 14:47:07.916  INFO [PAYMENT-SERVICE,,] 28016 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-25 14:48:33.408  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 14:48:33.408  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036713408, current=DOWN, previous=UP]
+2024-04-25 14:48:33.408  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:48:33.412  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:48:33.814  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:48:36.822  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:48:36.825  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 14:48:36.866  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:48:36.974  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 14:48:36.974  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 14:48:37.113  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bd020077-2edf-3d11-a9c5-d6a43550c8d7
+2024-04-25 14:48:37.182  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 14:48:37.183  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:48:37.183  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:48:37.200  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:48:37.200  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 224 ms
+2024-04-25 14:48:37.295  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:48:37.575  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:48:37.581  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:48:37.763  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:48:37.790  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:48:37.806  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:48:37.806  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:48:37.816  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:48:37.816  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:48:37.816  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:48:37.816  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:48:37.816  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:48:37.816  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:48:37.816  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:48:37.829  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:48:37.833  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:48:37.836  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:48:37.844  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714036717844 with initial instances count: 6
+2024-04-25 14:48:37.848  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 14:48:37.848  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036717848, current=UP, previous=STARTING]
+2024-04-25 14:48:37.848  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:48:37.850  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 14:48:37.851  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 14:48:37.857  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:48:37.912  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.017 seconds (JVM running for 211.083)
+2024-04-25 14:48:37.914  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 14:51:26.506  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 14:51:26.506  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036886506, current=DOWN, previous=UP]
+2024-04-25 14:51:26.506  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:51:26.509  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:51:27.516  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:51:30.545  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:51:30.548  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 14:51:30.588  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:51:30.695  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 14:51:30.696  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 14:51:30.818  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65402831-afed-3c6e-b274-7460c05b09ad
+2024-04-25 14:51:30.883  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 14:51:30.883  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:51:30.883  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:51:30.898  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:51:30.898  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 201 ms
+2024-04-25 14:51:30.985  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:51:31.268  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:51:31.276  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:51:31.449  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:51:31.473  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:51:31.487  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:51:31.488  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:51:31.494  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:51:31.494  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:51:31.494  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:51:31.494  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:51:31.494  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:51:31.494  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:51:31.494  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:51:31.506  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:51:31.509  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:51:31.512  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:51:31.519  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714036891519 with initial instances count: 5
+2024-04-25 14:51:31.523  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 14:51:31.523  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714036891523, current=UP, previous=STARTING]
+2024-04-25 14:51:31.524  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:51:31.525  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 14:51:31.526  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 14:51:31.531  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:51:31.588  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 0.97 seconds (JVM running for 384.759)
+2024-04-25 14:51:31.591  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   BraveSamplerConfiguration.RefreshScopedSamplerConfiguration#defaultTraceSampler:
+      Did not match:
+         - @ConditionalOnMissingBean (types: brave.sampler.Sampler; SearchStrategy: all) found beans of type 'brave.sampler.Sampler' samplerOb (OnBeanCondition)
+      Matched:
+         - @ConditionalOnProperty (spring.sleuth.sampler.refresh.enabled) matched (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-04-25 14:56:31.506  INFO [PAYMENT-SERVICE,,] 28016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:58:01.038  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 14:58:01.038  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037281038, current=DOWN, previous=UP]
+2024-04-25 14:58:01.039  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:58:01.043  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:58:02.066  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:58:05.079  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:58:05.082  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 14:58:05.132  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:58:05.285  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 14:58:05.285  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 14:58:05.526  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65402831-afed-3c6e-b274-7460c05b09ad
+2024-04-25 14:58:05.629  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 14:58:05.629  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:58:05.629  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:58:05.655  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:58:05.655  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 368 ms
+2024-04-25 14:58:05.777  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:58:06.226  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:58:06.235  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:58:06.446  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:58:06.483  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:58:06.498  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:58:06.498  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:58:06.505  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:58:06.505  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:58:06.505  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:58:06.505  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:58:06.505  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:58:06.505  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:58:06.505  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:58:06.515  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:58:06.519  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:58:06.522  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:58:06.528  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714037286528 with initial instances count: 6
+2024-04-25 14:58:06.533  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 14:58:06.533  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037286533, current=UP, previous=STARTING]
+2024-04-25 14:58:06.533  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:58:06.536  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 14:58:06.536  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 14:58:06.544  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:58:06.612  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.442 seconds (JVM running for 779.783)
+2024-04-25 14:58:06.614  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 14:58:07.645  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-19] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 14:58:07.646  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037287646, current=DOWN, previous=UP]
+2024-04-25 14:58:07.646  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:58:07.650  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:58:08.668  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 14:58:11.676  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 14:58:11.679  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 14:58:11.719  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 14:58:11.835  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 14:58:11.835  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 14:58:11.971  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65402831-afed-3c6e-b274-7460c05b09ad
+2024-04-25 14:58:12.041  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 14:58:12.041  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 14:58:12.041  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 14:58:12.059  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 14:58:12.059  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 223 ms
+2024-04-25 14:58:12.139  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 14:58:12.405  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 14:58:12.413  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 14:58:12.588  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 14:58:12.613  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 14:58:12.628  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 14:58:12.628  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 14:58:12.634  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 14:58:12.634  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 14:58:12.634  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 14:58:12.634  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 14:58:12.634  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 14:58:12.634  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 14:58:12.634  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 14:58:12.644  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 14:58:12.647  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 14:58:12.650  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 14:58:12.658  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714037292658 with initial instances count: 6
+2024-04-25 14:58:12.662  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 14:58:12.662  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037292662, current=UP, previous=STARTING]
+2024-04-25 14:58:12.662  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 14:58:12.665  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 14:58:12.665  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 14:58:12.669  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 14:58:12.724  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 0.972 seconds (JVM running for 785.895)
+2024-04-25 14:58:12.726  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:01:54.810  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-25] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 15:01:54.811  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037514811, current=DOWN, previous=UP]
+2024-04-25 15:01:54.811  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:01:54.814  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:01:55.856  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:01:58.867  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:01:58.870  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 15:01:58.908  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-25] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:01:59.074  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 15:01:59.074  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 15:01:59.240  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65402831-afed-3c6e-b274-7460c05b09ad
+2024-04-25 15:01:59.318  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 15:01:59.318  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:01:59.318  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:01:59.334  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:01:59.334  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 259 ms
+2024-04-25 15:01:59.421  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:01:59.729  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:01:59.737  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:01:59.954  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:01:59.982  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:01:59.997  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:01:59.997  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:02:00.004  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:02:00.004  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:02:00.004  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:02:00.004  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:02:00.004  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:02:00.004  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:02:00.004  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:02:00.016  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:02:00.020  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:02:00.024  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:02:00.033  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714037520033 with initial instances count: 5
+2024-04-25 15:02:00.037  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 15:02:00.038  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037520038, current=UP, previous=STARTING]
+2024-04-25 15:02:00.038  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:02:00.040  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 15:02:00.041  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 15:02:00.047  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:02:00.116  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.168 seconds (JVM running for 1013.287)
+2024-04-25 15:02:00.117  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:02:01.164  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-31] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 15:02:01.164  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037521164, current=DOWN, previous=UP]
+2024-04-25 15:02:01.164  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:02:01.167  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:02:02.187  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:02:05.203  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:02:05.206  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 15:02:05.246  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-31] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:02:05.350  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 15:02:05.351  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 15:02:05.469  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65402831-afed-3c6e-b274-7460c05b09ad
+2024-04-25 15:02:05.537  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 15:02:05.538  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:02:05.538  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:02:05.554  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:02:05.554  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 203 ms
+2024-04-25 15:02:05.635  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:02:05.913  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:02:05.921  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:02:06.096  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:02:06.117  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:02:06.133  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:02:06.133  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:02:06.139  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:02:06.140  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:02:06.140  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:02:06.140  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:02:06.140  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:02:06.140  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:02:06.140  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:02:06.148  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:02:06.151  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:02:06.154  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:02:06.161  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714037526161 with initial instances count: 5
+2024-04-25 15:02:06.165  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 15:02:06.166  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714037526166, current=UP, previous=STARTING]
+2024-04-25 15:02:06.166  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:02:06.168  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 15:02:06.168  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 15:02:06.171  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:02:06.228  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 0.949 seconds (JVM running for 1019.398)
+2024-04-25 15:02:06.229  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:07:06.155  INFO [PAYMENT-SERVICE,,] 28016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:10:56.232  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-37] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 15:10:56.232  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038056232, current=DOWN, previous=UP]
+2024-04-25 15:10:56.232  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:10:56.236  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:10:57.255  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:11:00.273  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:11:00.276  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 15:11:00.317  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-37] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:11:00.430  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 15:11:00.430  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 15:11:00.553  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65402831-afed-3c6e-b274-7460c05b09ad
+2024-04-25 15:11:00.620  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 15:11:00.621  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:11:00.621  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:11:00.636  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:11:00.636  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 205 ms
+2024-04-25 15:11:00.723  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:11:01.014  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:11:01.022  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:11:01.211  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:11:01.236  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:11:01.252  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:11:01.252  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:11:01.258  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:11:01.258  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:11:01.258  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:11:01.258  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:11:01.258  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:11:01.258  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:11:01.258  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:11:01.267  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:11:01.271  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:11:01.274  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:11:01.281  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038061281 with initial instances count: 5
+2024-04-25 15:11:01.285  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 15:11:01.285  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038061285, current=UP, previous=STARTING]
+2024-04-25 15:11:01.286  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:11:01.291  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 15:11:01.291  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 15:11:01.295  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:11:01.359  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.008 seconds (JVM running for 1554.529)
+2024-04-25 15:11:01.360  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:11:02.437  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-43] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 15:11:02.437  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038062437, current=DOWN, previous=UP]
+2024-04-25 15:11:02.437  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:11:02.439  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:11:03.449  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:11:06.460  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:11:06.464  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 15:11:06.504  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-43] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:11:06.637  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 15:11:06.637  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 15:11:06.766  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65402831-afed-3c6e-b274-7460c05b09ad
+2024-04-25 15:11:06.833  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 15:11:06.834  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:11:06.834  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:11:06.853  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:11:06.853  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2024-04-25 15:11:06.939  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:11:07.231  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:11:07.238  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:11:07.431  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:11:07.454  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:11:07.471  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:11:07.471  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:11:07.477  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:11:07.477  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:11:07.477  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:11:07.477  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:11:07.477  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:11:07.477  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:11:07.477  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:11:07.487  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:11:07.489  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:11:07.492  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:11:07.500  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038067500 with initial instances count: 5
+2024-04-25 15:11:07.504  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 15:11:07.505  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038067505, current=UP, previous=STARTING]
+2024-04-25 15:11:07.505  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:11:07.506  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 15:11:07.507  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 15:11:07.511  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:11:07.572  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.027 seconds (JVM running for 1560.742)
+2024-04-25 15:11:07.573  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:11:30.878  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-49] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 15:11:30.879  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038090879, current=DOWN, previous=UP]
+2024-04-25 15:11:30.879  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:11:30.884  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:11:31.899  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:11:34.929  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:11:34.933  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 15:11:34.976  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-49] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:11:35.093  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 28016 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 15:11:35.093  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 15:11:35.213  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=65402831-afed-3c6e-b274-7460c05b09ad
+2024-04-25 15:11:35.283  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 15:11:35.284  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:11:35.284  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:11:35.301  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:11:35.301  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2024-04-25 15:11:35.390  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:11:35.679  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:11:35.689  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:11:35.885  WARN [PAYMENT-SERVICE,,] 28016 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:11:35.910  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:11:35.926  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:11:35.926  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:11:35.932  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:11:35.932  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:11:35.932  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:11:35.932  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:11:35.932  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:11:35.932  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:11:35.932  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:11:35.941  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:11:35.944  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:11:35.947  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:11:35.954  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038095954 with initial instances count: 6
+2024-04-25 15:11:35.958  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 15:11:35.958  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038095958, current=UP, previous=STARTING]
+2024-04-25 15:11:35.958  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:11:35.962  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 15:11:35.962  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 15:11:35.965  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:11:36.027  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.012 seconds (JVM running for 1589.197)
+2024-04-25 15:11:36.028  INFO [PAYMENT-SERVICE,,] 28016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:12:11.492  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-55] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 15:12:11.492  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038131492, current=DOWN, previous=UP]
+2024-04-25 15:12:11.493  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:12:11.496  INFO [PAYMENT-SERVICE,,] 28016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:12:12.532  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:12:15.563  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:12:15.568  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 15:12:15.611  INFO [PAYMENT-SERVICE,,] 28016 --- [Thread-55] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:14:52.024  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23260 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 15:14:52.026  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 15:14:52.102  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 15:14:52.102  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 15:14:54.246  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59cb73c0-7d99-34e5-9c5a-ff4639369375
+2024-04-25 15:14:55.408  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 15:14:55.424  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:14:55.424  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:14:55.599  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:14:55.599  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3496 ms
+2024-04-25 15:14:56.265  WARN [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:14:57.448  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 15:14:57.570  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 15:14:57.933  WARN [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:14:58.261  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:14:58.543  WARN [PAYMENT-SERVICE,,] 23260 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:14:58.662  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:14:58.725  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:14:58.741  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:14:58.803  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:14:58.803  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:14:58.803  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:14:58.803  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:14:58.803  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:14:58.803  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:14:58.803  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:14:59.254  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:14:59.257  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:14:59.273  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:14:59.290  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038299290 with initial instances count: 0
+2024-04-25 15:14:59.306  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 15:14:59.306  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038299306, current=UP, previous=STARTING]
+2024-04-25 15:14:59.318  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:14:59.369  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 15:14:59.374  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 15:14:59.377  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:14:59.554  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 15:14:59.574  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 15:14:59.623  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 15:14:59.753  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 8.636 seconds (JVM running for 9.956)
+2024-04-25 15:15:29.269  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:15:29.269  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:15:29.269  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:15:29.269  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:15:29.269  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:15:29.269  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-04-25 15:15:29.270  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:15:29.278  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:15:36.261  INFO [PAYMENT-SERVICE,,] 23260 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 15:15:36.262  INFO [PAYMENT-SERVICE,,] 23260 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038336262, current=DOWN, previous=UP]
+2024-04-25 15:15:36.262  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:15:36.266  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:15:37.310  INFO [PAYMENT-SERVICE,,] 23260 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 15:15:40.333  INFO [PAYMENT-SERVICE,,] 23260 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 15:15:40.337  INFO [PAYMENT-SERVICE,,] 23260 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 15:15:40.380  INFO [PAYMENT-SERVICE,,] 23260 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 15:15:40.498  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 23260 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 15:15:40.498  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 15:15:40.758  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59cb73c0-7d99-34e5-9c5a-ff4639369375
+2024-04-25 15:15:40.839  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 15:15:40.840  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 15:15:40.840  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 15:15:40.857  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 15:15:40.858  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 359 ms
+2024-04-25 15:15:41.005  WARN [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 15:15:41.427  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 15:15:41.465  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 15:15:41.562  WARN [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 15:15:41.676  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 15:15:41.792  WARN [PAYMENT-SERVICE,,] 23260 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 15:15:41.828  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 15:15:41.846  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 15:15:41.846  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:15:41.854  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 15:15:41.854  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 15:15:41.854  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 15:15:41.855  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 15:15:41.855  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 15:15:41.855  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 15:15:41.855  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 15:15:41.872  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 15:15:41.875  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 15:15:41.878  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 15:15:41.886  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714038341886 with initial instances count: 6
+2024-04-25 15:15:41.891  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 15:15:41.891  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714038341891, current=UP, previous=STARTING]
+2024-04-25 15:15:41.891  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 15:15:41.895  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 15:15:41.896  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 15:15:41.901  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 15:15:41.963  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 15:15:41.964  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 15:15:41.967  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 15:15:41.985  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.57 seconds (JVM running for 52.187)
+2024-04-25 15:15:41.987  INFO [PAYMENT-SERVICE,,] 23260 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 15:17:35.752  INFO [PAYMENT-SERVICE,,] 23260 --- [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 15:17:35.752  INFO [PAYMENT-SERVICE,,] 23260 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25 15:17:35.753  INFO [PAYMENT-SERVICE,,] 23260 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-04-25 15:20:41.865  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:25:41.867  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:30:41.869  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:35:41.872  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:40:41.885  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:45:41.890  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:50:41.896  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 15:55:41.903  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:00:41.915  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:05:41.918  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:10:41.924  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:35:10.145  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:40:10.160  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:45:10.175  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:50:10.184  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 16:55:10.198  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:00:10.202  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:05:10.219  INFO [PAYMENT-SERVICE,,] 23260 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:08:09.174  INFO [PAYMENT-SERVICE,,] 23260 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 17:08:09.197  INFO [PAYMENT-SERVICE,,] 23260 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 17:08:09.199  INFO [PAYMENT-SERVICE,,] 23260 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 17:08:09.200  INFO [PAYMENT-SERVICE,,] 23260 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714045089199, current=DOWN, previous=UP]
+2024-04-25 17:08:09.201  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:08:09.212  INFO [PAYMENT-SERVICE,,] 23260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:29:16.069  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 6988 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 17:29:16.071  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 17:29:16.120  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 17:29:16.120  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 17:29:17.338  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59cb73c0-7d99-34e5-9c5a-ff4639369375
+2024-04-25 17:29:18.113  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 17:29:18.128  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:29:18.128  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:29:18.248  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:29:18.248  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2128 ms
+2024-04-25 17:29:18.759  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:29:19.846  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:29:19.964  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:29:20.308  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:29:20.668  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:29:20.951  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:29:21.086  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:29:21.139  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:29:21.147  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:29:21.179  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:29:21.179  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:29:21.179  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:29:21.179  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:29:21.179  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:29:21.179  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:29:21.179  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:29:21.459  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:29:21.467  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:29:21.474  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:29:21.491  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714046361490 with initial instances count: 1
+2024-04-25 17:29:21.501  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 17:29:21.502  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046361502, current=UP, previous=STARTING]
+2024-04-25 17:29:21.504  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:29:21.538  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 17:29:21.539  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 17:29:21.545  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:29:21.652  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:29:21.666  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:29:21.695  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:29:21.777  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 6.322 seconds (JVM running for 7.195)
+2024-04-25 17:31:25.489  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 17:31:25.489  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046485489, current=DOWN, previous=UP]
+2024-04-25 17:31:25.489  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:31:25.502  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:31:26.553  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 17:31:29.585  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 17:31:29.591  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 17:31:29.658  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 17:31:29.801  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 6988 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 17:31:29.801  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 17:31:30.106  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59cb73c0-7d99-34e5-9c5a-ff4639369375
+2024-04-25 17:31:30.202  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 17:31:30.203  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:31:30.203  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:31:30.220  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:31:30.221  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 417 ms
+2024-04-25 17:31:30.396  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:31:30.842  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:31:30.888  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:31:30.981  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:31:31.128  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:31:31.279  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:31:31.320  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:31:31.340  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:31:31.341  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:31:31.350  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:31:31.351  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:31:31.351  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:31:31.351  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:31:31.351  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:31:31.351  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:31:31.351  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:31:31.377  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:31:31.381  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:31:31.386  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:31:31.397  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714046491397 with initial instances count: 5
+2024-04-25 17:31:31.403  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 17:31:31.403  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046491403, current=UP, previous=STARTING]
+2024-04-25 17:31:31.403  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:31:31.408  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 17:31:31.409  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 17:31:31.416  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:31:31.478  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:31:31.480  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:31:31.484  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:31:31.498  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.789 seconds (JVM running for 136.917)
+2024-04-25 17:31:31.501  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 17:33:37.978  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 17:33:37.978  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046617978, current=DOWN, previous=UP]
+2024-04-25 17:33:37.978  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:33:37.984  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:33:39.024  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 17:33:42.052  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 17:33:42.055  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 17:33:42.121  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 17:33:42.257  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 6988 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 17:33:42.257  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 17:33:42.541  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59cb73c0-7d99-34e5-9c5a-ff4639369375
+2024-04-25 17:33:42.628  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 17:33:42.629  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:33:42.629  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:33:42.648  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:33:42.649  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 391 ms
+2024-04-25 17:33:42.812  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:33:43.230  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:33:43.275  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:33:43.366  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:33:43.483  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:33:43.611  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:33:43.650  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:33:43.670  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:33:43.670  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:33:43.680  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:33:43.681  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:33:43.681  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:33:43.681  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:33:43.681  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:33:43.681  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:33:43.681  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:33:43.699  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:33:43.705  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:33:43.713  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:33:43.722  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714046623722 with initial instances count: 6
+2024-04-25 17:33:43.726  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 17:33:43.727  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046623727, current=UP, previous=STARTING]
+2024-04-25 17:33:43.727  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:33:43.730  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 17:33:43.731  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 17:33:43.736  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:33:43.796  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:33:43.797  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:33:43.801  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:33:43.815  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.648 seconds (JVM running for 269.233)
+2024-04-25 17:33:43.818  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 17:37:44.846  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 17:37:44.847  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046864847, current=DOWN, previous=UP]
+2024-04-25 17:37:44.847  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:37:44.850  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:37:45.879  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-04-25 17:37:48.902  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-04-25 17:37:48.907  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - deregister  status: 200
+2024-04-25 17:37:48.967  INFO [PAYMENT-SERVICE,,] 6988 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-04-25 17:37:49.102  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 6988 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 17:37:49.102  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 17:37:49.395  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59cb73c0-7d99-34e5-9c5a-ff4639369375
+2024-04-25 17:37:49.470  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 17:37:49.471  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:37:49.471  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:37:49.491  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:37:49.492  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 388 ms
+2024-04-25 17:37:49.661  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:37:50.115  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:37:50.154  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:37:50.249  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:37:50.368  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:37:50.505  WARN [PAYMENT-SERVICE,,] 6988 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:37:50.539  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:37:50.561  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:37:50.561  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:37:50.570  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:37:50.570  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:37:50.570  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:37:50.570  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:37:50.570  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:37:50.570  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:37:50.570  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:37:50.584  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:37:50.589  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:37:50.594  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:37:50.605  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714046870605 with initial instances count: 5
+2024-04-25 17:37:50.611  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 17:37:50.611  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046870611, current=UP, previous=STARTING]
+2024-04-25 17:37:50.611  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:37:50.615  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 17:37:50.616  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 17:37:50.622  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:37:50.697  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:37:50.698  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:37:50.710  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:37:50.729  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 1.716 seconds (JVM running for 516.148)
+2024-04-25 17:37:50.732  INFO [PAYMENT-SERVICE,,] 6988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-25 17:38:39.367  INFO [PAYMENT-SERVICE,,] 6988 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 17:38:39.368  INFO [PAYMENT-SERVICE,,] 6988 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 17:38:39.368  INFO [PAYMENT-SERVICE,,] 6988 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714046919368, current=DOWN, previous=UP]
+2024-04-25 17:38:39.368  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:38:39.372  INFO [PAYMENT-SERVICE,,] 6988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:44:00.461  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.alt.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 17.0.2 on DESKTOP-96LS5MF with PID 15304 (D:\Topic_Wise_microservice_Implementation\PaymentService\target\classes started by Deepak in D:\Topic_Wise_microservice_Implementation\PaymentService)
+2024-04-25 17:44:00.462  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.alt.PaymentServiceApplication        : No active profile set, falling back to default profiles: default
+2024-04-25 17:44:00.507  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-25 17:44:00.507  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-25 17:44:02.201  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5d45a5f5-737e-32a7-908a-f56c3bc310ae
+2024-04-25 17:44:02.952  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2024-04-25 17:44:02.960  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25 17:44:02.961  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-04-25 17:44:03.049  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25 17:44:03.049  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2542 ms
+2024-04-25 17:44:03.512  WARN [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2024-04-25 17:44:04.440  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-04-25 17:44:04.517  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-04-25 17:44:04.729  WARN [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-04-25 17:44:05.057  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-04-25 17:44:05.223  WARN [PAYMENT-SERVICE,,] 15304 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-25 17:44:05.290  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-04-25 17:44:05.324  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-04-25 17:44:05.329  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:44:05.351  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-04-25 17:44:05.351  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-04-25 17:44:05.351  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-04-25 17:44:05.351  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-04-25 17:44:05.351  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-04-25 17:44:05.351  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-04-25 17:44:05.351  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-04-25 17:44:05.466  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-04-25 17:44:05.471  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-04-25 17:44:05.476  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-25 17:44:05.487  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714047245486 with initial instances count: 3
+2024-04-25 17:44:05.492  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2024-04-25 17:44:05.493  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714047245493, current=UP, previous=STARTING]
+2024-04-25 17:44:05.494  INFO [PAYMENT-SERVICE,,] 15304 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:44:05.510  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2024-04-25 17:44:05.511  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8989
+2024-04-25 17:44:05.521  INFO [PAYMENT-SERVICE,,] 15304 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
+2024-04-25 17:44:05.609  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-04-25 17:44:05.622  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-04-25 17:44:05.655  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-04-25 17:44:05.730  INFO [PAYMENT-SERVICE,,] 15304 --- [restartedMain] com.alt.PaymentServiceApplication        : Started PaymentServiceApplication in 5.922 seconds (JVM running for 6.709)
+2024-04-25 17:44:05.753  INFO [PAYMENT-SERVICE,,] 15304 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as d27a77472594
+2024-04-25 17:44:05.791  INFO [PAYMENT-SERVICE,,] 15304 --- [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25 17:44:05.791  INFO [PAYMENT-SERVICE,,] 15304 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25 17:44:05.792  INFO [PAYMENT-SERVICE,,] 15304 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-25 17:49:05.357  INFO [PAYMENT-SERVICE,,] 15304 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-04-25 17:51:13.970  INFO [PAYMENT-SERVICE,,] 15304 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-25 17:51:13.970  INFO [PAYMENT-SERVICE,,] 15304 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2024-04-25 17:51:13.970  INFO [PAYMENT-SERVICE,,] 15304 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714047673970, current=DOWN, previous=UP]
+2024-04-25 17:51:13.971  INFO [PAYMENT-SERVICE,,] 15304 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989: registering service...
+2024-04-25 17:51:13.974  INFO [PAYMENT-SERVICE,,] 15304 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-96LS5MF:PAYMENT-SERVICE:8989 - registration status: 204
